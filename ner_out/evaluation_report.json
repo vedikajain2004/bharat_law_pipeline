@@ -1,0 +1,134 @@
+{
+  "strict": {
+    "mode": "strict",
+    "total_gold": 600,
+    "total_pred": 599,
+    "total_tp": 549,
+    "per_label": {
+      "ACT_NAME": {
+        "precision": 0.94,
+        "recall": 0.94,
+        "f1": 0.94,
+        "tp": 94,
+        "fp": 6,
+        "fn": 6
+      },
+      "DATE": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.9744,
+        "tp": 95,
+        "fp": 0,
+        "fn": 5
+      },
+      "MONEY": {
+        "precision": 1.0,
+        "recall": 0.82,
+        "f1": 0.9011,
+        "tp": 82,
+        "fp": 0,
+        "fn": 18
+      },
+      "NOTIFICATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 100,
+        "fp": 0,
+        "fn": 0
+      },
+      "ORG": {
+        "precision": 0.6423,
+        "recall": 0.79,
+        "f1": 0.7085,
+        "tp": 79,
+        "fp": 44,
+        "fn": 21
+      },
+      "SECTION_REF": {
+        "precision": 1.0,
+        "recall": 0.99,
+        "f1": 0.995,
+        "tp": 99,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "macro": {
+      "precision": 0.9304,
+      "recall": 0.915,
+      "f1": 0.9198
+    },
+    "micro": {
+      "precision": 0.9165,
+      "recall": 0.915,
+      "f1": 0.9158
+    }
+  },
+  "partial": {
+    "mode": "partial",
+    "total_gold": 600,
+    "total_pred": 599,
+    "total_tp": 576,
+    "per_label": {
+      "ACT_NAME": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 100,
+        "fp": 0,
+        "fn": 0
+      },
+      "DATE": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.9744,
+        "tp": 95,
+        "fp": 0,
+        "fn": 5
+      },
+      "MONEY": {
+        "precision": 1.0,
+        "recall": 0.82,
+        "f1": 0.9011,
+        "tp": 82,
+        "fp": 0,
+        "fn": 18
+      },
+      "NOTIFICATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 100,
+        "fp": 0,
+        "fn": 0
+      },
+      "ORG": {
+        "precision": 0.813,
+        "recall": 1.0,
+        "f1": 0.8969,
+        "tp": 100,
+        "fp": 23,
+        "fn": 0
+      },
+      "SECTION_REF": {
+        "precision": 1.0,
+        "recall": 0.99,
+        "f1": 0.995,
+        "tp": 99,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "macro": {
+      "precision": 0.9688,
+      "recall": 0.96,
+      "f1": 0.9612
+    },
+    "micro": {
+      "precision": 0.9616,
+      "recall": 0.96,
+      "f1": 0.9608
+    }
+  }
+}

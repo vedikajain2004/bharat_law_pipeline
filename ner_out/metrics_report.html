@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bharat Law Pipeline — Metrics Report</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 40px; color: #1f2937; background: #f9fafb; }
+  h1   { color: #1d4ed8; } h2 { color: #1e40af; margin-top: 2em; border-bottom: 2px solid #bfdbfe; padding-bottom: .3em; }
+  table { border-collapse: collapse; width: 100%; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+  th   { background: #1d4ed8; color: #fff; padding: 10px 14px; text-align: left; }
+  td   { padding: 9px 14px; border-bottom: 1px solid #e5e7eb; }
+  tr:last-child td { border: none; }
+  .stat-grid { display: flex; gap: 20px; flex-wrap: wrap; margin: 1em 0; }
+  .stat-card { background: #fff; border-radius: 10px; padding: 20px 28px; box-shadow: 0 1px 4px rgba(0,0,0,.1); min-width: 160px; }
+  .stat-card .val { font-size: 2em; font-weight: 700; color: #1d4ed8; }
+  .stat-card .lbl { color: #6b7280; font-size: .9em; margin-top: 4px; }
+  code { background: #eff6ff; padding: 2px 6px; border-radius: 3px; font-size: .9em; color: #1d4ed8; }
+</style>
+</head>
+<body>
+<h1>🏛️ Bharat Law Pipeline — Metrics Report</h1>
+
+<h2>Pipeline Summary</h2>
+<div class="stat-grid">
+  <div class="stat-card"><div class="val">100</div><div class="lbl">Pages Crawled</div></div>
+  <div class="stat-card"><div class="val">93</div><div class="lbl">HTML Pages</div></div>
+  <div class="stat-card"><div class="val">7</div><div class="lbl">PDFs</div></div>
+  <div class="stat-card"><div class="val">0</div><div class="lbl">JS-Rendered</div></div>
+  <div class="stat-card"><div class="val">36</div><div class="lbl">Chunks</div></div>
+  <div class="stat-card"><div class="val">254</div><div class="lbl">Avg Tokens/Chunk</div></div>
+  <div class="stat-card"><div class="val">0.9158</div><div class="lbl">NER Micro F1</div></div>
+</div>
+
+<h2>NER Performance (Strict — per label)</h2>
+<table>
+  <thead>
+    <tr><th>Label</th><th>Precision</th><th>Recall</th><th>F1</th><th>TP</th><th>FP</th><th>FN</th><th>F1 Bar</th></tr>
+  </thead>
+  <tbody>
+        <tr>
+          <td><code>ACT_NAME</code></td>
+          <td>0.9400</td><td>0.9400</td>
+          <td><strong>0.9400</strong></td>
+          <td>94</td><td>6</td><td>6</td>
+          <td><div style="background:#e5e7eb;border-radius:4px;height:18px;width:200px;display:inline-block;"><div style="background:#22c55e;width:188px;height:100%;border-radius:4px;"></div></div><span style="margin-left:8px;font-weight:600;">94.0%</span></td>
+        </tr>
+        <tr>
+          <td><code>DATE</code></td>
+          <td>1.0000</td><td>0.9500</td>
+          <td><strong>0.9744</strong></td>
+          <td>95</td><td>0</td><td>5</td>
+          <td><div style="background:#e5e7eb;border-radius:4px;height:18px;width:200px;display:inline-block;"><div style="background:#22c55e;width:194px;height:100%;border-radius:4px;"></div></div><span style="margin-left:8px;font-weight:600;">97.4%</span></td>
+        </tr>
+        <tr>
+          <td><code>MONEY</code></td>
+          <td>1.0000</td><td>0.8200</td>
+          <td><strong>0.9011</strong></td>
+          <td>82</td><td>0</td><td>18</td>
+          <td><div style="background:#e5e7eb;border-radius:4px;height:18px;width:200px;display:inline-block;"><div style="background:#22c55e;width:180px;height:100%;border-radius:4px;"></div></div><span style="margin-left:8px;font-weight:600;">90.1%</span></td>
+        </tr>
+        <tr>
+          <td><code>NOTIFICATION</code></td>
+          <td>1.0000</td><td>1.0000</td>
+          <td><strong>1.0000</strong></td>
+          <td>100</td><td>0</td><td>0</td>
+          <td><div style="background:#e5e7eb;border-radius:4px;height:18px;width:200px;display:inline-block;"><div style="background:#22c55e;width:200px;height:100%;border-radius:4px;"></div></div><span style="margin-left:8px;font-weight:600;">100.0%</span></td>
+        </tr>
+        <tr>
+          <td><code>ORG</code></td>
+          <td>0.6423</td><td>0.7900</td>
+          <td><strong>0.7085</strong></td>
+          <td>79</td><td>44</td><td>21</td>
+          <td><div style="background:#e5e7eb;border-radius:4px;height:18px;width:200px;display:inline-block;"><div style="background:#22c55e;width:141px;height:100%;border-radius:4px;"></div></div><span style="margin-left:8px;font-weight:600;">70.9%</span></td>
+        </tr>
+        <tr>
+          <td><code>SECTION_REF</code></td>
+          <td>1.0000</td><td>0.9900</td>
+          <td><strong>0.9950</strong></td>
+          <td>99</td><td>0</td><td>1</td>
+          <td><div style="background:#e5e7eb;border-radius:4px;height:18px;width:200px;display:inline-block;"><div style="background:#22c55e;width:199px;height:100%;border-radius:4px;"></div></div><span style="margin-left:8px;font-weight:600;">99.5%</span></td>
+        </tr></tbody>
+</table>
+
+<h2>Chunk Token Distribution</h2>
+<table>
+  <thead><tr><th>Token Range</th><th>Count</th><th>% of Total</th></tr></thead>
+  <tbody><tr><td>< 400</td><td>26</td><td>72.2%</td></tr><tr><td>400–600</td><td>7</td><td>19.4%</td></tr><tr><td>600–800</td><td>1</td><td>2.8%</td></tr><tr><td>> 800</td><td>2</td><td>5.6%</td></tr></tbody>
+</table>
+
+<h2>Crawl Composition</h2>
+<table>
+  <thead><tr><th>Type</th><th>Count</th></tr></thead>
+  <tbody>
+    <tr><td>HTML (static)</td><td>93</td></tr>
+    <tr><td>HTML (JS-rendered)</td><td>0</td></tr>
+    <tr><td>PDF</td><td>7</td></tr>
+  </tbody>
+</table>
+
+<p style="margin-top:3em;color:#9ca3af;font-size:.85em;">Generated by Bharat Law Pipeline · bharat_law_pipeline/scripts/summarize.py</p>
+</body>
+</html>

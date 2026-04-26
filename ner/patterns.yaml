@@ -1,0 +1,69 @@
+# ner/patterns.yaml
+# Pattern config for Indian Legal NER
+# Edit this file to add new patterns — no Python changes needed.
+# Each entry: {label, id, pattern (regex string), priority (lower = higher priority)}
+
+section_ref:
+  # Constitutional references
+  - {id: const_article,     pattern: 'Article\s+\d+(?:[A-Z]{1,2})?\s*(?:\(\d+\))?(?:\s*(?:of|read\s+with)\s+the\s+Constitution)?', priority: 1}
+  # Complex forms (longest first)
+  - {id: clause_subsec_sec, pattern: 'Clause\s+\([a-z]{1,3}\)\s+of\s+Sub-?[Ss]ection\s+\(\d+\)\s+of\s+[Ss]ection\s+\d+(?:[A-Z]{1,2})?(?:\([0-9a-zA-Z]+\))*', priority: 2}
+  - {id: clause_sec,        pattern: 'Clause\s+\([a-z]{1,3}\)\s+of\s+[Ss]ection\s+\d+(?:[A-Z]{1,2})?(?:\([0-9a-zA-Z]+\))*', priority: 3}
+  - {id: proviso_sec,       pattern: '(?:first\s+|second\s+|third\s+)?[Pp]roviso\s+to\s+(?:Sub-?[Ss]ection\s+\(\d+\)\s+of\s+)?[Ss]ection\s+\d+(?:[A-Z]{1,2})?(?:\([0-9a-zA-Z]+\))*', priority: 3}
+  - {id: explanation_sec,   pattern: '[Ee]xplanation\s+\d*\s*to\s+(?:Sub-?[Ss]ection\s+\(\d+\)\s+of\s+)?[Ss]ection\s+\d+(?:[A-Z]{1,2})?(?:\([0-9a-zA-Z]+\))*', priority: 3}
+  - {id: subsec_sec,        pattern: 'Sub-?[Ss]ection\s+\(\d+\)\s+of\s+[Ss]ection\s+\d+(?:[A-Z]{1,2})?(?:\([0-9a-zA-Z]+\))*', priority: 4}
+  - {id: order_rule,        pattern: 'Order\s+[IVXivx]+\s+Rule\s+\d+(?:\([0-9a-zA-Z]+\))*', priority: 4}
+  - {id: schedule,          pattern: '(?:First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth|Tenth|Eleventh|Twelfth|[IVX]+(?:th|st|nd|rd)?)\s+Schedule(?:\s+to\s+the\s+Act)?', priority: 4}
+  - {id: sec_with_sub,      pattern: '[Ss]ection\s+\d+(?:[A-Z]{1,2})?\s*(?:\(\s*[0-9a-zA-Z]+\s*\))+', priority: 5}
+  - {id: sec_plain,         pattern: '[Ss]ection\s+\d+(?:[A-Z]{1,2})?(?![a-z])', priority: 6}
+  - {id: rule_plain,        pattern: 'Rule\s+\d+(?:[A-Z]{1,2})?\s*(?:\([0-9a-zA-Z]+\))*', priority: 6}
+  - {id: chapter,           pattern: 'Chapter\s+(?:[IVXivx]+|\d+)(?:-[A-Z])?', priority: 7}
+  - {id: para,              pattern: 'para(?:graph)?\s+\d+(?:\([0-9a-zA-Z]+\))*', priority: 7}
+
+notification:
+  # Gazette notifications
+  - {id: so,      pattern: 'S\.O\.\s*\d+(?:\([A-Z]+\))?', priority: 1}
+  - {id: gsr,     pattern: 'G\.S\.R\.\s*\d+(?:\([A-Z]+\))?', priority: 1}
+  # Circular / Instruction / Letter
+  - {id: circular,    pattern: 'Circular\s+No\.?\s*\d+(?:/\d+)*(?:\s+of\s+\d{4})?', priority: 2}
+  - {id: instruction, pattern: 'Instruction\s+No\.?\s*\d+(?:/\d+)*(?:\s+of\s+\d{4})?', priority: 2}
+  - {id: letter,      pattern: 'Letter\s+(?:F\.)?No\.?\s*[\w/()-]+(?:\s+dated)?', priority: 3}
+  # File numbers
+  - {id: fno,     pattern: 'F\.?\s*No\.?\s*[\d/\w().-]+', priority: 2}
+  # Press release
+  - {id: press,   pattern: 'Press\s+Release\s+No\.?\s*[\d/]+', priority: 2}
+  # Notification number (generic)
+  - {id: notif_no, pattern: 'Notification\s+No\.?\s*[\d/]+(?:\s*\([A-Z]+\))?(?:\s+dated\s+\d{1,2}[-/.]\d{1,2}[-/.]\d{2,4})?', priority: 2}
+  # Order number
+  - {id: order_no, pattern: 'Order\s+No\.?\s*[\d/\w().-]+', priority: 3}
+  # CBDT / CBIC specific
+  - {id: cbdt_ref, pattern: '(?:CBDT|CBIC)\s+(?:Circular|Notification|Instruction)\s+No\.?\s*\d+(?:/\d+)*', priority: 1}
+
+date:
+  # Indian fiscal/assessment year
+  - {id: fy,          pattern: 'F\.?Y\.?\s*\d{4}[-–]\d{2,4}', priority: 1}
+  - {id: ay,          pattern: 'A\.?Y\.?\s*\d{4}[-–]\d{2,4}', priority: 1}
+  # w.e.f. dates
+  - {id: wef,         pattern: 'w\.e\.f\.?\s+\d{1,2}[-./]\d{1,2}[-./]\d{2,4}', priority: 1}
+  # Standard date formats
+  - {id: iso,         pattern: '\d{4}-\d{2}-\d{2}', priority: 2}
+  - {id: dd_mm_yyyy_dash,  pattern: '\d{1,2}-\d{1,2}-\d{4}', priority: 2}
+  - {id: dd_mm_yyyy_slash, pattern: '\d{1,2}/\d{1,2}/\d{4}', priority: 2}
+  - {id: dd_mm_yyyy_dot,   pattern: '\d{1,2}\.\d{1,2}\.\d{4}', priority: 2}
+  - {id: dd_month_yyyy,    pattern: '\d{1,2}(?:st|nd|rd|th)?\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s*,?\s+\d{4}', priority: 2}
+  - {id: month_dd_yyyy,    pattern: '(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:st|nd|rd|th)?\s*,?\s+\d{4}', priority: 2}
+  # Month-year only
+  - {id: month_year,  pattern: '(?:January|February|March|April|May|June|July|August|September|October|November|December),?\s+\d{4}', priority: 3}
+
+money:
+  # Indian number system: Lakh/Crore/Arab
+  - {id: inr_crore_lakh, pattern: '(?:Rs\.?|INR|₹)\s*[\d,]+(?:\.\d+)?\s*(?:Crore|Lakh|Arab|Thousand)?', priority: 1}
+  - {id: crore_lakh_words, pattern: '(?:Rs\.?|INR|₹)\s*[\d,]+(?:\.\d+)?\s*(?:crore|lakh|arab|thousand)', priority: 1}
+  - {id: numeral_crore,   pattern: '\d+(?:\.\d+)?\s+(?:crore|Crore|lakh|Lakh)\s+rupees?', priority: 1}
+  # Foreign currencies
+  - {id: usd,   pattern: 'USD\s*[\d,]+(?:\.\d+)?', priority: 2}
+  - {id: eur,   pattern: 'EUR\s*[\d,]+(?:\.\d+)?', priority: 2}
+  - {id: gbp,   pattern: 'GBP\s*[\d,]+(?:\.\d+)?', priority: 2}
+  # Generic with symbol
+  - {id: rupee_sym,  pattern: '₹\s*[\d,]+(?:\.\d+)?(?:\s*(?:crore|Crore|lakh|Lakh))?', priority: 2}
+  - {id: rs_plain,   pattern: 'Rs\.?\s*[\d,]+(?:\.\d+)?', priority: 3}

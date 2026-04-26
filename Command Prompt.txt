@@ -1,0 +1,666 @@
+Microsoft Windows [Version 10.0.26200.8117]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\jain2>cd C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline
+
+C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline>bash run.sh
+
+╔══════════════════════════════════════════════════════════╗
+║       BHARAT LAW PIPELINE — FULL RUN                    ║
+╚══════════════════════════════════════════════════════════╝
+
+▶  [1/6] Installing Python dependencies…
+▶  [1/6] Downloading spaCy model…
+✔ Download and installation successful
+You can now load the package via spacy.load('en_core_web_sm')
+▶  [1/6] Installing Playwright browsers…
+✓  Dependencies ready.
+
+▶  [2/6] Crawling seed URLs…
+2026-04-26 12:39:58,545 [INFO] [depth=0] Fetching: https://www.incometaxindia.gov.in/international-taxation
+2026-04-26 12:39:58,799 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/international-taxation "HTTP/1.1 200 OK"
+2026-04-26 12:39:59,542 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\1fe2d2d544a7a534.html (JS=False)
+2026-04-26 12:40:01,941 [INFO] [depth=0] Fetching: https://www.incometaxindia.gov.in/frequently-asked-questions
+2026-04-26 12:40:02,107 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/frequently-asked-questions "HTTP/1.1 200 OK"
+2026-04-26 12:40:02,560 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\d4b703002e381312.html (JS=False)
+2026-04-26 12:40:04,910 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in
+2026-04-26 12:40:05,078 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in "HTTP/1.1 200 OK"
+2026-04-26 12:40:05,415 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\7864b1409b77f423.html (JS=False)
+2026-04-26 12:40:07,571 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/screen-reader
+2026-04-26 12:40:07,739 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/screen-reader "HTTP/1.1 200 OK"
+2026-04-26 12:40:08,046 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\e383b4d9f53e9013.html (JS=False)
+2026-04-26 12:40:10,307 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/help
+2026-04-26 12:40:10,711 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/help "HTTP/1.1 200 OK"
+2026-04-26 12:40:11,112 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\a9c0cbfef5defaa6.html (JS=False)
+2026-04-26 12:40:13,567 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/employees-corner
+2026-04-26 12:40:13,677 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/employees-corner "HTTP/1.1 302 Moved Temporarily"
+2026-04-26 12:40:13,883 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/c/portal/login?redirect=%2Femployees-corner&refererPlid=1951&p_l_id=2208"HTTP/1.1 302 Moved Temporarily"
+2026-04-26 12:40:14,604 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/login?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&_com_liferay_login_web_portlet_LoginPortlet_redirect=%2Femployees-corner "HTTP/1.1 200 OK"
+2026-04-26 12:40:14,939 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\ae3036141a2fe2dd.html (JS=False)
+2026-04-26 12:40:17,555 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/take-online-oath
+2026-04-26 12:40:17,773 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/take-online-oath "HTTP/1.1 200 OK"
+2026-04-26 12:40:18,040 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\2a8e1be475b70abe.html (JS=False)
+2026-04-26 12:40:20,707 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/home
+2026-04-26 12:40:20,844 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/home "HTTP/1.1 200 OK"
+2026-04-26 12:40:21,366 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\7a73fd4e337d8c36.html (JS=False)
+2026-04-26 12:40:23,683 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/history-of-direct-taxation
+2026-04-26 12:40:23,919 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/history-of-direct-taxation "HTTP/1.1 200 OK"
+2026-04-26 12:40:24,391 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\98047f50dd1fecfe.html (JS=False)
+2026-04-26 12:40:27,148 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/who-we-are
+2026-04-26 12:40:27,340 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/who-we-are "HTTP/1.1 200 OK"
+2026-04-26 12:40:27,747 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\a574b2ca75f325ca.html (JS=False)
+2026-04-26 12:40:30,453 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/documents/d/guest/departmental-directory2026-1
+2026-04-26 12:40:30,572 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/documents/d/guest/departmental-directory2026-1 "HTTP/1.1 200 OK"
+2026-04-26 12:40:36,487 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/right-to-information
+2026-04-26 12:40:36,724 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/right-to-information "HTTP/1.1 200 OK"
+2026-04-26 12:40:36,965 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\4186777850799faf.html (JS=False)
+2026-04-26 12:40:39,449 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/cbdt
+2026-04-26 12:40:39,695 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/cbdt "HTTP/1.1 200 OK"
+2026-04-26 12:40:40,064 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\13d216ea7e42159d.html (JS=False)
+2026-04-26 12:40:42,853 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/documents/d/guest/organization-chart
+2026-04-26 12:40:42,962 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/documents/d/guest/organization-chart "HTTP/1.1 200 OK"
+2026-04-26 12:40:45,354 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/cca/dg-sub-sites
+2026-04-26 12:40:45,624 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/cca/dg-sub-sites "HTTP/1.1 200 OK"
+2026-04-26 12:40:45,800 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\de7d9fd6504b0fd4.html (JS=False)
+2026-04-26 12:40:48,059 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/documents/d/guest/taxpayer-charter
+2026-04-26 12:40:48,186 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/documents/d/guest/taxpayer-charter "HTTP/1.1 200 OK"
+2026-04-26 12:40:50,271 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/taxpayers-charter-reports
+2026-04-26 12:40:50,441 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/taxpayers-charter-reports "HTTP/1.1 200 OK"
+2026-04-26 12:40:50,527 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\0ba451b0ae104999.html (JS=False)
+2026-04-26 12:40:53,057 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-tax-act-20251
+2026-04-26 12:40:53,411 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-tax-act-20251 "HTTP/1.1 200 OK"
+2026-04-26 12:40:53,585 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\7635a571d6e74935.html (JS=False)
+2026-04-26 12:40:56,120 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-tax-act
+2026-04-26 12:40:56,378 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-tax-act "HTTP/1.1 200 OK"
+2026-04-26 12:40:56,516 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\bc857fd5ba244d2a.html (JS=False)
+2026-04-26 12:40:58,700 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/black-money-undisclosed-foreign-income-and-assets-and-imposition-of-tax-act-2015
+2026-04-26 12:40:58,835 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/black-money-undisclosed-foreign-income-and-assets-and-imposition-of-tax-act-2015 "HTTP/1.1 200 OK"
+2026-04-26 12:40:59,033 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\999123e03b45429c.html (JS=False)
+2026-04-26 12:41:01,602 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/prohibition-of-benami-property-transactions-act-1988
+2026-04-26 12:41:01,803 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/prohibition-of-benami-property-transactions-act-1988 "HTTP/1.1 200 OK"
+2026-04-26 12:41:01,949 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\1247e2eba6927179.html (JS=False)
+2026-04-26 12:41:04,417 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/all-acts
+2026-04-26 12:41:04,574 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/all-acts "HTTP/1.1 200 OK"
+2026-04-26 12:41:04,762 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\55fdeabe6fe70c8f.html (JS=False)
+2026-04-26 12:41:07,365 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-tax-rule-2026
+2026-04-26 12:41:07,539 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-tax-rule-2026 "HTTP/1.1 200 OK"
+2026-04-26 12:41:07,658 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\d8fb801b9f40bc60.html (JS=False)
+2026-04-26 12:41:09,847 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-tax-rules
+2026-04-26 12:41:10,000 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-tax-rules "HTTP/1.1 200 OK"
+2026-04-26 12:41:10,297 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\d8aa598c3a2cedec.html (JS=False)
+2026-04-26 12:41:12,887 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/black-money-undisclosed-foreign-income-and-assets-and-imposition-of-tax-rules-2015
+2026-04-26 12:41:13,084 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/black-money-undisclosed-foreign-income-and-assets-and-imposition-of-tax-rules-2015 "HTTP/1.1 200 OK"
+2026-04-26 12:41:13,278 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\2a95b8154c35dc3e.html (JS=False)
+2026-04-26 12:41:15,685 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/all-rules
+2026-04-26 12:41:15,859 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/all-rules "HTTP/1.1 200 OK"
+2026-04-26 12:41:16,075 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\90cdd5f05b2213c4.html (JS=False)
+2026-04-26 12:41:18,342 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/circulars
+2026-04-26 12:41:18,496 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/circulars "HTTP/1.1 200 OK"
+2026-04-26 12:41:18,671 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\bf9e6d6145e30bee.html (JS=False)
+2026-04-26 12:41:21,136 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/notifications
+2026-04-26 12:41:21,362 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/notifications "HTTP/1.1 200 OK"
+2026-04-26 12:41:21,648 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\97ed47acb5c44c95.html (JS=False)
+2026-04-26 12:41:24,210 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-tax-returns
+2026-04-26 12:41:24,344 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-tax-returns "HTTP/1.1 200 OK"
+2026-04-26 12:41:24,652 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\998095442fc3bdc7.html (JS=False)
+2026-04-26 12:41:27,075 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-tax-forms-2026
+2026-04-26 12:41:27,308 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-tax-forms-2026 "HTTP/1.1 200 OK"
+2026-04-26 12:41:27,589 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\aeaf4b51cdae52ce.html (JS=False)
+2026-04-26 12:41:30,175 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-tax-forms
+2026-04-26 12:41:30,373 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-tax-forms "HTTP/1.1 200 OK"
+2026-04-26 12:41:30,660 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\d2e14c09baac39ad.html (JS=False)
+2026-04-26 12:41:33,314 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/all-forms-download
+2026-04-26 12:41:33,446 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/all-forms-download "HTTP/1.1 200 OK"
+2026-04-26 12:41:33,700 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\c28bac4aa1654439.html (JS=False)
+2026-04-26 12:41:36,407 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/finance-acts
+2026-04-26 12:41:36,625 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/finance-acts "HTTP/1.1 200 OK"
+2026-04-26 12:41:36,893 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\546f5aa24aab886e.html (JS=False)
+2026-04-26 12:41:39,516 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/finance-bills
+2026-04-26 12:41:39,696 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/finance-bills "HTTP/1.1 200 OK"
+2026-04-26 12:41:39,882 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\7a3f545bf4e4ee76.html (JS=False)
+2026-04-26 12:41:42,130 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/budget-bills
+2026-04-26 12:41:42,353 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/budget-bills "HTTP/1.1 200 OK"
+2026-04-26 12:41:42,601 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\e709714ac7d9c171.html (JS=False)
+2026-04-26 12:41:45,004 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-information-services
+2026-04-26 12:41:45,221 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-information-services "HTTP/1.1 200 OK"
+2026-04-26 12:41:45,777 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\89674256d1b059fa.html (JS=False)
+2026-04-26 12:41:48,409 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-services
+2026-04-26 12:41:50,033 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-services "HTTP/1.1 200 OK"
+2026-04-26 12:41:50,325 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\a8cc2ad29f238a0b.html (JS=False)
+2026-04-26 12:41:52,694 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/advertisement-gallery
+2026-04-26 12:41:52,799 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/advertisement-gallery "HTTP/1.1 200 OK"
+2026-04-26 12:41:53,205 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\88fc18c3e136cd8c.html (JS=False)
+2026-04-26 12:41:55,546 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/advanced-search
+2026-04-26 12:41:55,769 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/advanced-search "HTTP/1.1 200 OK"
+2026-04-26 12:41:56,036 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\51c57f32d2548e49.html (JS=False)
+2026-04-26 12:41:58,697 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-tools
+2026-04-26 12:41:58,842 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-tools "HTTP/1.1 200 OK"
+2026-04-26 12:41:59,142 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\173b4e4a60380cf8.html (JS=False)
+2026-04-26 12:42:01,473 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/reckoner
+2026-04-26 12:42:01,706 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/reckoner "HTTP/1.1 200 OK"
+2026-04-26 12:42:01,874 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\5d2a001099977e25.html (JS=False)
+2026-04-26 12:42:04,426 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-calendar
+2026-04-26 12:42:04,578 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-calendar "HTTP/1.1 200 OK"
+2026-04-26 12:42:04,797 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\c6c7a417724885e9.html (JS=False)
+2026-04-26 12:42:07,419 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/dtaa
+2026-04-26 12:42:07,550 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/dtaa "HTTP/1.1 200 OK"
+2026-04-26 12:42:07,814 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\ad3dd698ddd875c8.html (JS=False)
+2026-04-26 12:42:10,527 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/treaty-comparison
+2026-04-26 12:42:11,025 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/treaty-comparison "HTTP/1.1 200 OK"
+2026-04-26 12:42:11,278 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\2f0f77f118397dea.html (JS=False)
+2026-04-26 12:42:13,625 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/transfer-pricing
+2026-04-26 12:42:13,790 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/transfer-pricing "HTTP/1.1 200 OK"
+2026-04-26 12:42:14,566 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\299a87c25072dc01.html (JS=False)
+2026-04-26 12:42:17,230 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/advance-rulings
+2026-04-26 12:42:17,476 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/advance-rulings "HTTP/1.1 200 OK"
+2026-04-26 12:42:17,768 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\9bfd63311326b382.html (JS=False)
+2026-04-26 12:42:20,489 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/advance-pricing-agreement-reports
+2026-04-26 12:42:20,683 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/advance-pricing-agreement-reports "HTTP/1.1 200 OK"
+2026-04-26 12:42:21,104 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\40515e306614ca45.html (JS=False)
+2026-04-26 12:42:23,813 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/exchange-of-information
+2026-04-26 12:42:24,029 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/exchange-of-information "HTTP/1.1 200 OK"
+2026-04-26 12:42:24,390 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\5773663539d0ed97.html (JS=False)
+2026-04-26 12:42:26,827 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/exchange-of-information-on-request
+2026-04-26 12:42:27,101 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/exchange-of-information-on-request "HTTP/1.1 302 Moved Temporarily"
+2026-04-26 12:42:27,305 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/c/portal/login?redirect=%2Fexchange-of-information-on-request&refererPlid=1867&p_l_id=2208 "HTTP/1.1 302 Moved Temporarily"
+2026-04-26 12:42:27,618 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/login?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&_com_liferay_login_web_portlet_LoginPortlet_redirect=%2Fexchange-of-information-on-request "HTTP/1.1 200 OK"
+2026-04-26 12:42:27,985 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\d10eb96b551e0128.html (JS=False)
+2026-04-26 12:42:30,465 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/automatic-exchange-of-information-aeoi-
+2026-04-26 12:42:30,584 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/automatic-exchange-of-information-aeoi- "HTTP/1.1 200 OK"
+2026-04-26 12:42:31,027 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\3df14ee588a485d7.html (JS=False)
+2026-04-26 12:42:33,516 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/documents/20117/267844/MAP+Profile+%281%29.pdf/06f7a379-8b92-674e-c91e-c01c1760d9b2?version=1.0&t=1773909001211&download=true
+2026-04-26 12:42:33,760 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/documents/20117/267844/MAP+Profile+%281%29.pdf/06f7a379-8b92-674e-c91e-c01c1760d9b2?version=1.0&t=1773909001211&download=true "HTTP/1.1 200 OK"
+2026-04-26 12:42:35,943 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/documents/20117/43000/mutual-agreement-procedure-map-guidance-2022.pdf/6a391a8f-d528-16a2-6f54-cfc427569e63?version=1.0&t=1756143974131&download=true
+2026-04-26 12:42:36,177 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/documents/20117/43000/mutual-agreement-procedure-map-guidance-2022.pdf/6a391a8f-d528-16a2-6f54-cfc427569e63?version=1.0&t=1756143974131&download=true "HTTP/1.1 200 OK"
+2026-04-26 12:42:38,905 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/documents/20117/267844/MAP+2020.pdf/afb244fd-0117-e094-fbcd-2525f3863357?version=1.0&t=1773909039179&download=true
+2026-04-26 12:42:39,084 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/documents/20117/267844/MAP+2020.pdf/afb244fd-0117-e094-fbcd-2525f3863357?version=1.0&t=1773909039179&download=true "HTTP/1.1 200 OK"
+2026-04-26 12:42:41,635 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/relevant-provisions
+2026-04-26 12:42:41,745 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/relevant-provisions "HTTP/1.1 200 OK"
+2026-04-26 12:42:42,170 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\19a73ed13c8942a7.html (JS=False)
+2026-04-26 12:42:44,568 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/double-taxation-avoidance-agreements
+2026-04-26 12:42:44,837 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/double-taxation-avoidance-agreements "HTTP/1.1 200 OK"
+2026-04-26 12:42:45,239 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\cfa89394514dd165.html (JS=False)
+2026-04-26 12:42:47,737 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/withholding-tax
+2026-04-26 12:42:48,094 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/withholding-tax "HTTP/1.1 200 OK"
+2026-04-26 12:42:48,614 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\7ae2bb27a0f2d774.html (JS=False)
+2026-04-26 12:42:50,994 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/report-phishing
+2026-04-26 12:42:51,269 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/report-phishing "HTTP/1.1 200 OK"
+2026-04-26 12:42:51,681 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\627068ad760580c5.html (JS=False)
+2026-04-26 12:42:54,324 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/childrens-corner
+2026-04-26 12:42:54,545 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/childrens-corner "HTTP/1.1 200 OK"
+2026-04-26 12:42:55,013 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\fb0621416f40aa6d.html (JS=False)
+2026-04-26 12:42:57,456 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/feedback
+2026-04-26 12:42:57,719 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/feedback "HTTP/1.1 200 OK"
+2026-04-26 12:42:58,079 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\0039387b8f21600d.html (JS=False)
+2026-04-26 12:43:00,552 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/sitemap
+2026-04-26 12:43:00,790 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/sitemap "HTTP/1.1 200 OK"
+2026-04-26 12:43:01,222 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\5585f450c38ce0c9.html (JS=False)
+2026-04-26 12:43:04,010 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-helpline
+2026-04-26 12:43:04,169 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-helpline "HTTP/1.1 200 OK"
+2026-04-26 12:43:04,592 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\c8cee5943a93c983.html (JS=False)
+2026-04-26 12:43:07,012 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/grievance-support
+2026-04-26 12:43:07,350 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/grievance-support "HTTP/1.1 200 OK"
+2026-04-26 12:43:07,779 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\6dbb674183cb74ac.html (JS=False)
+2026-04-26 12:43:10,080 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/locators
+2026-04-26 12:43:10,211 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/locators "HTTP/1.1 302 Moved Temporarily"
+2026-04-26 12:43:10,317 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-tax-office "HTTP/1.1 200 OK"
+2026-04-26 12:43:10,648 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\bd710666ad6c6cbb.html (JS=False)
+2026-04-26 12:43:12,986 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/useful-links
+2026-04-26 12:43:13,182 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/useful-links "HTTP/1.1 200 OK"
+2026-04-26 12:43:13,521 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\edb33a911dcc07a2.html (JS=False)
+2026-04-26 12:43:16,171 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/subscribe
+2026-04-26 12:43:16,561 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/subscribe "HTTP/1.1 200 OK"
+2026-04-26 12:43:16,795 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\b8b22fe1ea011b7b.html (JS=False)
+2026-04-26 12:43:19,065 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-feeds
+2026-04-26 12:43:19,222 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-feeds "HTTP/1.1 200 OK"
+2026-04-26 12:43:19,518 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\d83482228c23cdbc.html (JS=False)
+2026-04-26 12:43:21,804 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/e-governance
+2026-04-26 12:43:21,986 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/e-governance "HTTP/1.1 200 OK"
+2026-04-26 12:43:22,285 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\26c8edddd31108e4.html (JS=False)
+2026-04-26 12:43:25,017 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/documents/d/guest/security-certificate-it-website
+2026-04-26 12:43:25,161 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/documents/d/guest/security-certificate-it-website "HTTP/1.1 200 OK"
+2026-04-26 12:43:27,470 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/website-policies
+2026-04-26 12:43:27,621 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/website-policies "HTTP/1.1 200 OK"
+2026-04-26 12:43:27,876 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\357ea730901092a9.html (JS=False)
+2026-04-26 12:43:30,135 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/disclaimer
+2026-04-26 12:43:30,282 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/disclaimer "HTTP/1.1 200 OK"
+2026-04-26 12:43:30,624 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\431eaf95f30454b7.html (JS=False)
+2026-04-26 12:43:33,082 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/accessibility
+2026-04-26 12:43:33,252 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/accessibility "HTTP/1.1 200 OK"
+2026-04-26 12:43:33,563 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\de0d960d1fd4681b.html (JS=False)
+2026-04-26 12:43:36,000 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/terms-conditions
+2026-04-26 12:43:36,184 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/terms-conditions "HTTP/1.1 200 OK"
+2026-04-26 12:43:36,489 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\5fc179329e6d70b9.html (JS=False)
+2026-04-26 12:43:39,205 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/website-certifications
+2026-04-26 12:43:39,396 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/website-certifications "HTTP/1.1 200 OK"
+2026-04-26 12:43:39,706 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\0eb2c1c5d8cde7d0.html (JS=False)
+2026-04-26 12:43:42,329 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-from-salary
+2026-04-26 12:43:42,570 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-from-salary "HTTP/1.1 200 OK"
+2026-04-26 12:43:43,309 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\19153d53fc8c968f.html (JS=False)
+2026-04-26 12:43:46,351 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-from-pension
+2026-04-26 12:43:46,563 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-from-pension "HTTP/1.1 200 OK"
+2026-04-26 12:43:46,988 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\fdfeeed96b0d8187.html (JS=False)
+2026-04-26 12:43:49,791 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/let-out-house-property
+2026-04-26 12:43:49,941 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/let-out-house-property "HTTP/1.1 200 OK"
+2026-04-26 12:43:50,495 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\265cdb86bb0111da.html (JS=False)
+2026-04-26 12:43:53,383 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/deemed-let-out-house-property
+2026-04-26 12:43:53,527 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/deemed-let-out-house-property "HTTP/1.1 200 OK"
+2026-04-26 12:43:54,012 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\13cdec26643101ec.html (JS=False)
+2026-04-26 12:43:56,523 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/self-occupied-house-property
+2026-04-26 12:43:56,665 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/self-occupied-house-property "HTTP/1.1 200 OK"
+2026-04-26 12:43:57,204 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\3cbb188e2373f663.html (JS=False)
+2026-04-26 12:43:59,817 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/sale-of-shares
+2026-04-26 12:43:59,976 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/sale-of-shares "HTTP/1.1 200 OK"
+2026-04-26 12:44:00,136 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\cd3fdb90e24c32ac.html (JS=False)
+2026-04-26 12:44:02,360 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/sale-of-debentures
+2026-04-26 12:44:02,535 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/sale-of-debentures "HTTP/1.1 200 OK"
+2026-04-26 12:44:02,719 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\f73b83b296d90688.html (JS=False)
+2026-04-26 12:44:04,907 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/income-from-business/profession-taxation-of-start-ups
+2026-04-26 12:44:05,099 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/income-from-business/profession-taxation-of-start-ups "HTTP/1.1 200 OK"
+2026-04-26 12:44:05,266 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\e84ac106c2d020b9.html (JS=False)
+2026-04-26 12:44:07,781 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/taxation-of-dividend-and-interest
+2026-04-26 12:44:08,168 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/taxation-of-dividend-and-interest "HTTP/1.1 200 OK"
+2026-04-26 12:44:08,341 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\84dfb6116cd1a3b2.html (JS=False)
+2026-04-26 12:44:10,508 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/deemed-income-including-gifts-
+2026-04-26 12:44:10,730 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/deemed-income-including-gifts- "HTTP/1.1 200 OK"
+2026-04-26 12:44:10,977 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\63cecc62f6c27c40.html (JS=False)
+2026-04-26 12:44:13,489 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/individual
+2026-04-26 12:44:13,559 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/individual "HTTP/1.1 200 OK"
+2026-04-26 12:44:14,134 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\cbc4882ab2c6d8ce.html (JS=False)
+2026-04-26 12:44:16,920 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/huf
+2026-04-26 12:44:17,134 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/huf "HTTP/1.1 200 OK"
+2026-04-26 12:44:17,699 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\1ddb44cfac80aae9.html (JS=False)
+2026-04-26 12:44:20,301 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/firm
+2026-04-26 12:44:20,455 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/firm "HTTP/1.1 200 OK"
+2026-04-26 12:44:20,974 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\95c832e03ee5bd93.html (JS=False)
+2026-04-26 12:44:23,690 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/llp
+2026-04-26 12:44:23,834 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/llp "HTTP/1.1 200 OK"
+2026-04-26 12:44:24,362 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\b07a266e47356e17.html (JS=False)
+2026-04-26 12:44:27,232 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/aop/boi
+2026-04-26 12:44:27,540 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/aop/boi "HTTP/1.1 200 OK"
+2026-04-26 12:44:28,127 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\d572356238a29146.html (JS=False)
+2026-04-26 12:44:30,885 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/domestic-company
+2026-04-26 12:44:31,106 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/domestic-company "HTTP/1.1 200 OK"
+2026-04-26 12:44:31,619 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\222a4f8081bf0938.html (JS=False)
+2026-04-26 12:44:34,513 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/foreign-company
+2026-04-26 12:44:34,692 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/foreign-company "HTTP/1.1 200 OK"
+2026-04-26 12:44:35,295 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\c261e712133ec19d.html (JS=False)
+2026-04-26 12:44:38,123 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/trust
+2026-04-26 12:44:38,377 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/trust "HTTP/1.1 200 OK"
+2026-04-26 12:44:38,898 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\7c452aaa87372b5b.html (JS=False)
+2026-04-26 12:44:41,472 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/non-resident
+2026-04-26 12:44:41,760 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/non-resident "HTTP/1.1 200 OK"
+2026-04-26 12:44:42,178 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\7cc37b4e5949e803.html (JS=False)
+2026-04-26 12:44:45,127 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-deductor
+2026-04-26 12:44:45,341 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-deductor "HTTP/1.1 200 OK"
+2026-04-26 12:44:45,887 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\53ca946627b9ae05.html (JS=False)
+2026-04-26 12:44:48,406 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-collector
+2026-04-26 12:44:48,709 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-collector "HTTP/1.1 200 OK"
+2026-04-26 12:44:49,227 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\d69c40ff026c43aa.html (JS=False)
+2026-04-26 12:44:51,779 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tax-professionals
+2026-04-26 12:44:51,868 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tax-professionals "HTTP/1.1 200 OK"
+2026-04-26 12:44:52,490 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\bc8016db5ab1a190.html (JS=False)
+2026-04-26 12:44:55,351 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/farmers
+2026-04-26 12:44:55,689 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/farmers "HTTP/1.1 200 OK"
+2026-04-26 12:44:56,225 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\ddd857ab14b8a4bf.html (JS=False)
+2026-04-26 12:44:58,722 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/pan
+2026-04-26 12:44:58,958 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/pan "HTTP/1.1 200 OK"
+2026-04-26 12:44:59,510 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\16b70d0adaf7bca0.html (JS=False)
+2026-04-26 12:45:02,319 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tan
+2026-04-26 12:45:02,545 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tan "HTTP/1.1 200 OK"
+2026-04-26 12:45:03,286 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\18aa8adfaa44daab.html (JS=False)
+2026-04-26 12:45:06,082 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/pan-verification
+2026-04-26 12:45:06,334 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/pan-verification "HTTP/1.1 200 OK"
+2026-04-26 12:45:06,769 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\b6fd1c54088274e0.html (JS=False)
+2026-04-26 12:45:09,215 [INFO] [depth=1] Fetching: https://www.incometaxindia.gov.in/tan-verification
+2026-04-26 12:45:09,506 [INFO] HTTP Request: GET https://www.incometaxindia.gov.in/tan-verification "HTTP/1.1 200 OK"
+2026-04-26 12:45:09,748 [INFO]   Saved HTML → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\raw\c89ddcde024a526c.html (JS=False)
+2026-04-26 12:45:10,144 [INFO] Crawl complete. Total pages: 100
+Pages crawled: 100
+✓  Crawl complete.
+
+▶  [3/6] Parsing & normalizing HTML/PDF…
+2026-04-26 12:45:14,478 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\1fe2d2d544a7a534.md  (40 chars, lang=en)
+2026-04-26 12:45:14,478 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/international-taxation (40 chars)
+2026-04-26 12:45:16,799 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\d4b703002e381312.md  (741 chars, lang=en)
+2026-04-26 12:45:18,970 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\7864b1409b77f423.md  (1,281 chars, lang=en)
+2026-04-26 12:45:20,691 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\e383b4d9f53e9013.md  (1,319 chars, lang=en)
+2026-04-26 12:45:23,017 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\a9c0cbfef5defaa6.md  (489 chars, lang=en)
+2026-04-26 12:45:25,012 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\ae3036141a2fe2dd.md  (14 chars, lang=en)
+2026-04-26 12:45:25,013 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/employees-corner (14 chars)
+2026-04-26 12:45:26,802 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\2a8e1be475b70abe.md  (34 chars, lang=en)
+2026-04-26 12:45:26,805 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/take-online-oath (34 chars)
+2026-04-26 12:45:28,863 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\7a73fd4e337d8c36.md  (1,281 chars, lang=en)
+2026-04-26 12:45:30,740 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\98047f50dd1fecfe.md  (44 chars, lang=en)
+2026-04-26 12:45:30,743 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/history-of-direct-taxation (44 chars)
+2026-04-26 12:45:32,441 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\a574b2ca75f325ca.md  (2,366 chars, lang=en)
+2026-04-26 12:45:33,356 [INFO] PDF parsed → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\31a422e06d060878.md  (0 chars, 0pages)
+2026-04-26 12:45:33,356 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/documents/d/guest/departmental-directory2026-1 (0 chars)
+2026-04-26 12:45:34,856 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\4186777850799faf.md  (38 chars, lang=en)
+2026-04-26 12:45:34,856 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/right-to-information (38 chars)
+2026-04-26 12:45:36,561 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\13d216ea7e42159d.md  (60 chars, lang=en)
+2026-04-26 12:45:36,626 [INFO] PDF parsed → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\2e47f980b7b7289e.md  (0 chars, 0pages)
+2026-04-26 12:45:36,626 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/documents/d/guest/organization-chart (0 chars)
+2026-04-26 12:45:38,736 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\de7d9fd6504b0fd4.md  (263 chars, lang=en)
+2026-04-26 12:45:38,788 [INFO] PDF parsed → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\766d6f742b3ec067.md  (0 chars, 0pages)
+2026-04-26 12:45:38,788 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/documents/d/guest/taxpayer-charter (0 chars)
+2026-04-26 12:45:40,439 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\0ba451b0ae104999.md  (44 chars, lang=en)
+2026-04-26 12:45:40,442 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/taxpayers-charter-reports (44 chars)
+2026-04-26 12:45:42,452 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\7635a571d6e74935.md  (1,015 chars, lang=en)
+2026-04-26 12:45:44,034 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\bc857fd5ba244d2a.md  (14 chars, lang=en)
+2026-04-26 12:45:44,035 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/income-tax-act (14 chars)
+2026-04-26 12:45:45,613 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\999123e03b45429c.md  (14 chars, lang=en)
+2026-04-26 12:45:45,614 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/black-money-undisclosed-foreign-income-and-assets-and-imposition-of-tax-act-2015 (14 chars)
+2026-04-26 12:45:47,160 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\1247e2eba6927179.md  (14 chars, lang=en)
+2026-04-26 12:45:47,160 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/prohibition-of-benami-property-transactions-act-1988 (14 chars)
+2026-04-26 12:45:48,771 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\55fdeabe6fe70c8f.md  (14 chars, lang=en)
+2026-04-26 12:45:48,771 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/all-acts (14 chars)
+2026-04-26 12:45:50,349 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\d8fb801b9f40bc60.md  (14 chars, lang=en)
+2026-04-26 12:45:50,350 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/income-tax-rule-2026 (14 chars)
+2026-04-26 12:45:51,960 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\d8aa598c3a2cedec.md  (14 chars, lang=en)
+2026-04-26 12:45:51,961 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/income-tax-rules (14 chars)
+2026-04-26 12:45:53,550 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\2a95b8154c35dc3e.md  (14 chars, lang=en)
+2026-04-26 12:45:53,550 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/black-money-undisclosed-foreign-income-and-assets-and-imposition-of-tax-rules-2015 (14 chars)
+2026-04-26 12:45:55,102 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\90cdd5f05b2213c4.md  (14 chars, lang=en)
+2026-04-26 12:45:55,102 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/all-rules (14 chars)
+2026-04-26 12:45:56,669 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\bf9e6d6145e30bee.md  (27 chars, lang=en)
+2026-04-26 12:45:56,670 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/circulars (27 chars)
+2026-04-26 12:45:58,234 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\97ed47acb5c44c95.md  (31 chars, lang=en)
+2026-04-26 12:45:58,234 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/notifications (31 chars)
+2026-04-26 12:45:59,821 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\998095442fc3bdc7.md  (36 chars, lang=en)
+2026-04-26 12:45:59,821 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/income-tax-returns (36 chars)
+2026-04-26 12:46:01,406 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\aeaf4b51cdae52ce.md  (40 chars, lang=en)
+2026-04-26 12:46:01,407 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/income-tax-forms-2026 (40 chars)
+2026-04-26 12:46:02,965 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\d2e14c09baac39ad.md  (34 chars, lang=en)
+2026-04-26 12:46:02,968 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/income-tax-forms (34 chars)
+2026-04-26 12:46:04,616 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\c28bac4aa1654439.md  (38 chars, lang=en)
+2026-04-26 12:46:04,617 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/all-forms-download (38 chars)
+2026-04-26 12:46:06,227 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\546f5aa24aab886e.md  (14 chars, lang=en)
+2026-04-26 12:46:06,228 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/finance-acts (14 chars)
+2026-04-26 12:46:07,993 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\7a3f545bf4e4ee76.md  (31 chars, lang=en)
+2026-04-26 12:46:07,993 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/finance-bills (31 chars)
+2026-04-26 12:46:09,669 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\e709714ac7d9c171.md  (472 chars, lang=en)
+2026-04-26 12:46:11,453 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\89674256d1b059fa.md  (1,935 chars, lang=en)
+2026-04-26 12:46:13,022 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\a8cc2ad29f238a0b.md  (32 chars, lang=en)
+2026-04-26 12:46:13,022 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/tax-services (32 chars)
+2026-04-26 12:46:14,599 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\88fc18c3e136cd8c.md  (217 chars, lang=en)
+2026-04-26 12:46:16,335 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\51c57f32d2548e49.md  (33 chars, lang=en)
+2026-04-26 12:46:16,335 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/advanced-search (33 chars)
+2026-04-26 12:46:17,912 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\173b4e4a60380cf8.md  (14 chars, lang=en)
+2026-04-26 12:46:17,912 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/tax-tools (14 chars)
+2026-04-26 12:46:19,481 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\5d2a001099977e25.md  (26 chars, lang=en)
+2026-04-26 12:46:19,482 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/reckoner (26 chars)
+2026-04-26 12:46:21,081 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\c6c7a417724885e9.md  (77 chars, lang=en)
+2026-04-26 12:46:22,672 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\ad3dd698ddd875c8.md  (146 chars, lang=en)
+2026-04-26 12:46:24,220 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\2f0f77f118397dea.md  (146 chars, lang=en)
+2026-04-26 12:46:26,558 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\299a87c25072dc01.md  (34 chars, lang=en)
+2026-04-26 12:46:26,558 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/transfer-pricing (34 chars)
+2026-04-26 12:46:28,206 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\9bfd63311326b382.md  (2,392 chars, lang=en)
+2026-04-26 12:46:29,809 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\40515e306614ca45.md  (1,030 chars, lang=en)
+2026-04-26 12:46:31,371 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\5773663539d0ed97.md  (1,278 chars, lang=en)
+2026-04-26 12:46:33,077 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\d10eb96b551e0128.md  (14 chars, lang=en)
+2026-04-26 12:46:33,077 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/exchange-of-information-on-request (14 chars)
+2026-04-26 12:46:36,135 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\3df14ee588a485d7.md  (105 chars, lang=en)
+2026-04-26 12:46:36,223 [INFO] PDF parsed → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\e9dc6bf9fc94542b.md  (0 chars, 0pages)
+2026-04-26 12:46:36,223 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/documents/20117/267844/MAP+Profile+%281%29.pdf/06f7a379-8b92-674e-c91e-c01c1760d9b2?version=1.0&t=1773909001211&download=true (0 chars)
+2026-04-26 12:46:36,386 [INFO] PDF parsed → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\540eb86b5e863b68.md  (0 chars, 0pages)
+2026-04-26 12:46:36,386 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/documents/20117/43000/mutual-agreement-procedure-map-guidance-2022.pdf/6a391a8f-d528-16a2-6f54-cfc427569e63?version=1.0&t=1756143974131&download=true (0 chars)
+2026-04-26 12:46:36,574 [INFO] PDF parsed → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\5866dcc1e6fa4916.md  (0 chars, 0pages)
+2026-04-26 12:46:36,575 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/documents/20117/267844/MAP+2020.pdf/afb244fd-0117-e094-fbcd-2525f3863357?version=1.0&t=1773909039179&download=true (0 chars)
+2026-04-26 12:46:38,440 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\19a73ed13c8942a7.md  (2,208 chars, lang=en)
+2026-04-26 12:46:40,008 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\cfa89394514dd165.md  (342 chars, lang=en)
+2026-04-26 12:46:41,634 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\7ae2bb27a0f2d774.md  (1,410 chars, lang=en)
+2026-04-26 12:46:43,179 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\627068ad760580c5.md  (2,983 chars, lang=en)
+2026-04-26 12:46:44,944 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\fb0621416f40aa6d.md  (1,706 chars, lang=en)
+2026-04-26 12:46:46,550 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\0039387b8f21600d.md  (58 chars, lang=en)
+2026-04-26 12:46:48,159 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\5585f450c38ce0c9.md  (14 chars, lang=en)
+2026-04-26 12:46:48,160 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/sitemap (14 chars)
+2026-04-26 12:46:49,811 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\c8cee5943a93c983.md  (3,447 chars, lang=en)
+2026-04-26 12:46:51,465 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\6dbb674183cb74ac.md  (1,607 chars, lang=en)
+2026-04-26 12:46:53,113 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\bd710666ad6c6cbb.md  (26 chars, lang=en)
+2026-04-26 12:46:53,115 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/locators (26 chars)
+2026-04-26 12:46:54,710 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\edb33a911dcc07a2.md  (14 chars, lang=en)
+2026-04-26 12:46:54,710 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/useful-links (14 chars)
+2026-04-26 12:46:56,346 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\b8b22fe1ea011b7b.md  (14 chars, lang=en)
+2026-04-26 12:46:56,347 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/subscribe (14 chars)
+2026-04-26 12:46:58,172 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\d83482228c23cdbc.md  (2,396 chars, lang=en)
+2026-04-26 12:47:00,381 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\26c8edddd31108e4.md  (546 chars, lang=en)
+2026-04-26 12:47:00,502 [INFO] PDF parsed → C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\9c86fea795d9d5d3.md  (0 chars, 0pages)
+2026-04-26 12:47:00,503 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/documents/d/guest/security-certificate-it-website (0 chars)
+2026-04-26 12:47:02,338 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\357ea730901092a9.md  (34 chars, lang=en)
+2026-04-26 12:47:02,338 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/website-policies (34 chars)
+2026-04-26 12:47:04,028 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\431eaf95f30454b7.md  (2,375 chars, lang=en)
+2026-04-26 12:47:05,778 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\de0d960d1fd4681b.md  (396 chars, lang=en)
+2026-04-26 12:47:07,529 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\5fc179329e6d70b9.md  (1,196 chars, lang=en)
+2026-04-26 12:47:09,054 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\0eb2c1c5d8cde7d0.md  (963 chars, lang=en)
+2026-04-26 12:47:11,147 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\19153d53fc8c968f.md  (36 chars, lang=en)
+2026-04-26 12:47:11,147 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/income-from-salary (36 chars)
+2026-04-26 12:47:13,124 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\fdfeeed96b0d8187.md  (37 chars, lang=en)
+2026-04-26 12:47:13,124 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/income-from-pension (37 chars)
+2026-04-26 12:47:15,036 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\265cdb86bb0111da.md  (40 chars, lang=en)
+2026-04-26 12:47:15,038 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/let-out-house-property (40 chars)
+2026-04-26 12:47:16,914 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\13cdec26643101ec.md  (47 chars, lang=en)
+2026-04-26 12:47:16,916 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/deemed-let-out-house-property (47 chars)
+2026-04-26 12:47:18,821 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\3cbb188e2373f663.md  (46 chars, lang=en)
+2026-04-26 12:47:18,822 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/self-occupied-house-property (46 chars)
+2026-04-26 12:47:20,776 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\cd3fdb90e24c32ac.md  (32 chars, lang=en)
+2026-04-26 12:47:20,776 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/sale-of-shares (32 chars)
+2026-04-26 12:47:22,892 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\f73b83b296d90688.md  (36 chars, lang=en)
+2026-04-26 12:47:22,893 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/sale-of-debentures (36 chars)
+2026-04-26 12:47:25,062 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\e84ac106c2d020b9.md  (73 chars, lang=en)
+2026-04-26 12:47:27,185 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\84dfb6116cd1a3b2.md  (51 chars, lang=en)
+2026-04-26 12:47:29,281 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\63cecc62f6c27c40.md  (49 chars, lang=en)
+2026-04-26 12:47:29,281 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/deemed-income-including-gifts- (49 chars)
+2026-04-26 12:47:31,282 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\cbc4882ab2c6d8ce.md  (28 chars, lang=en)
+2026-04-26 12:47:31,283 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/individual (28 chars)
+2026-04-26 12:47:33,234 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\1ddb44cfac80aae9.md  (21 chars, lang=en)
+2026-04-26 12:47:33,234 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/huf (21 chars)
+2026-04-26 12:47:35,210 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\95c832e03ee5bd93.md  (22 chars, lang=en)
+2026-04-26 12:47:35,210 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/firm (22 chars)
+2026-04-26 12:47:37,199 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\b07a266e47356e17.md  (21 chars, lang=en)
+2026-04-26 12:47:37,199 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/llp (21 chars)
+2026-04-26 12:47:39,471 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\d572356238a29146.md  (25 chars, lang=en)
+2026-04-26 12:47:39,475 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/aop/boi (25 chars)
+2026-04-26 12:47:41,751 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\222a4f8081bf0938.md  (34 chars, lang=en)
+2026-04-26 12:47:41,754 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/domestic-company (34 chars)
+2026-04-26 12:47:44,076 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\c261e712133ec19d.md  (33 chars, lang=en)
+2026-04-26 12:47:44,077 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/foreign-company (33 chars)
+2026-04-26 12:47:46,349 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\7c452aaa87372b5b.md  (23 chars, lang=en)
+2026-04-26 12:47:46,350 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/trust (23 chars)
+2026-04-26 12:47:48,653 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\7cc37b4e5949e803.md  (30 chars, lang=en)
+2026-04-26 12:47:48,656 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/non-resident (30 chars)
+2026-04-26 12:47:50,966 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\53ca946627b9ae05.md  (30 chars, lang=en)
+2026-04-26 12:47:50,969 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/tax-deductor (30 chars)
+2026-04-26 12:47:53,182 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\d69c40ff026c43aa.md  (31 chars, lang=en)
+2026-04-26 12:47:53,183 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/tax-collector (31 chars)
+2026-04-26 12:47:55,443 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\bc8016db5ab1a190.md  (35 chars, lang=en)
+2026-04-26 12:47:55,446 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/tax-professionals (35 chars)
+2026-04-26 12:47:57,709 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\ddd857ab14b8a4bf.md  (25 chars, lang=en)
+2026-04-26 12:47:57,711 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/farmers (25 chars)
+2026-04-26 12:48:00,091 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\16b70d0adaf7bca0.md  (21 chars, lang=en)
+2026-04-26 12:48:00,093 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/pan (21 chars)
+2026-04-26 12:48:02,536 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\18aa8adfaa44daab.md  (21 chars, lang=en)
+2026-04-26 12:48:02,539 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/tan (21 chars)
+2026-04-26 12:48:04,937 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\b6fd1c54088274e0.md  (34 chars, lang=en)
+2026-04-26 12:48:04,940 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/pan-verification (34 chars)
+2026-04-26 12:48:07,199 [INFO] HTML parsed -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\c89ddcde024a526c.md  (34 chars, lang=en)
+2026-04-26 12:48:07,202 [INFO] Skipping near-empty document: https://www.incometaxindia.gov.in/tan-verification (34 chars)
+2026-04-26 12:48:07,207 [INFO] Normalized 35 documents -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\normalized\normalized_index.jsonl
+✓  Parsing complete.
+
+▶  [4/6] Chunking normalized documents…
+✓  Chunking complete.
+
+▶  [5/6] Running NER on all chunks…
+INFO:__main__:spaCy loaded: en_core_web_sm
+INFO:__main__:NER complete: 36 chunks annotated -> C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\ner_out\annotations.jsonl
+✓  NER complete.
+
+▶  [5b]  Evaluating NER against gold_ner.jsonl…
+
+============================================================
+  NER EVALUATION REPORT  (STRICT MATCH)
+============================================================
+  Gold entities : 600
+  Pred entities : 599
+  True positives: 549
+
+  Label                              P       R      F1     TP    FP    FN
+  ---------------------------- ------- ------- -------  ----- ----- -----
+  ACT_NAME                      0.9400  0.9400  0.9400     94     6     6
+  DATE                          1.0000  0.9500  0.9744     95     0     5
+  MONEY                         1.0000  0.8200  0.9011     82     0    18
+  NOTIFICATION                  1.0000  1.0000  1.0000    100     0     0
+  ORG                           0.6423  0.7900  0.7085     79    44    21
+  SECTION_REF                   1.0000  0.9900  0.9950     99     0     1
+  ---------------------------- ------- ------- -------
+  MACRO AVG                     0.9304  0.9150  0.9198
+  MICRO AVG                     0.9165  0.9150  0.9158
+============================================================
+
+
+============================================================
+  NER EVALUATION REPORT  (PARTIAL MATCH)
+============================================================
+  Gold entities : 600
+  Pred entities : 599
+  True positives: 576
+
+  Label                              P       R      F1     TP    FP    FN
+  ---------------------------- ------- ------- -------  ----- ----- -----
+  ACT_NAME                      1.0000  1.0000  1.0000    100     0     0
+  DATE                          1.0000  0.9500  0.9744     95     0     5
+  MONEY                         1.0000  0.8200  0.9011     82     0    18
+  NOTIFICATION                  1.0000  1.0000  1.0000    100     0     0
+  ORG                           0.8130  1.0000  0.8969    100    23     0
+  SECTION_REF                   1.0000  0.9900  0.9950     99     0     1
+  ---------------------------- ------- ------- -------
+  MACRO AVG                     0.9688  0.9600  0.9612
+  MICRO AVG                     0.9616  0.9600  0.9608
+============================================================
+
+✓  Evaluation complete. Report → ner_out/evaluation_report.json
+
+▶  [6/6] Generating final summary…
+
+==================================================
+  BHARAT LAW PIPELINE — FINAL SUMMARY
+==================================================
+  Pages crawled:      100
+  Chunks created:     36
+  Avg tokens/chunk:   254
+  NER F1-score:       0.9158
+==================================================
+
+  HTML report: C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline\ner_out\metrics_report.html
+
+╔══════════════════════════════════════════════════════════╗
+║  All stages complete. Outputs:                           ║
+║    raw/              → crawled content                   ║
+║    normalized/       → clean markdown                    ║
+║    chunks/           → semantic chunks                   ║
+║    ner_out/          → annotations + evaluation report   ║
+╚══════════════════════════════════════════════════════════╝
+
+
+C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline>py -m pytest tests/ -v
+=================================================================== test session starts ===================================================================
+platform win32 -- Python 3.14.2, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\jain2\AppData\Local\Python\pythoncore-3.14-64\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline
+plugins: anyio-4.12.1, dash-4.0.0rc6
+collected 89 items
+
+tests/test_chunker.py::test_chunk_count_is_nonzero PASSED                                                                                            [  1%]
+tests/test_chunker.py::test_chunk_token_range PASSED                                                                                                 [  2%]
+tests/test_chunker.py::test_chunk_required_fields PASSED                                                                                             [  3%]
+tests/test_chunker.py::test_chunk_ids_are_unique PASSED                                                                                              [  4%]
+tests/test_chunker.py::test_chunk_text_nonempty PASSED                                                                                               [  5%]
+tests/test_chunker.py::test_page_numbers_tracked PASSED                                                                                              [  6%]
+tests/test_chunker.py::test_section_path_populated PASSED                                                                                            [  7%]
+tests/test_chunker.py::test_char_offsets_ordered PASSED                                                                                              [  8%]
+tests/test_chunker.py::test_url_preserved PASSED                                                                                                     [ 10%]
+tests/test_ner.py::test_section_ref[under Section 10 of the Act-Section 10] PASSED                                                                   [ 11%]
+tests/test_ner.py::test_section_ref[Section 9A inserted by Finance Act-Section 9A] PASSED                                                            [ 12%]
+tests/test_ner.py::test_section_ref[Section 2(1)(a) defines assessee-Section 2(1)(a)] PASSED                                                         [ 13%]
+tests/test_ner.py::test_section_ref[as per Section 1(2) of the Rules-Section 1(2)] PASSED                                                            [ 14%]
+tests/test_ner.py::test_section_ref[Sub-section (3) of Section 40A applies-Sub-section (3) of Section 40A] PASSED                                    [ 15%]
+tests/test_ner.py::test_section_ref[Clause (b) of Section 10(23C) exempts-Clause (b) of Section 10(23C)] PASSED                                      [ 16%]
+tests/test_ner.py::test_section_ref[Clause (a) of Sub-section (1) of Section 80C-Clause (a) of Sub-section (1) of Section 80C] PASSED                [ 17%]
+tests/test_ner.py::test_section_ref[first proviso to Section 44AD applies-first proviso to Section 44AD] PASSED                                      [ 19%]
+tests/test_ner.py::test_section_ref[proviso to Sub-section (2) of Section 139-proviso to Sub-section (2) of Section 139] PASSED                      [ 20%]
+tests/test_ner.py::test_section_ref[Explanation 2 to Section 9(1)(vi)-Explanation 2 to Section 9(1)(vi)] PASSED                                      [ 21%]
+tests/test_ner.py::test_section_ref[Explanation to Section 43B-Explanation to Section 43B] PASSED                                                    [ 22%]
+tests/test_ner.py::test_section_ref[Fourth Schedule to the Act-Fourth Schedule] PASSED                                                               [ 23%]
+tests/test_ner.py::test_section_ref[as per the Seventh Schedule-Seventh Schedule] PASSED                                                             [ 24%]
+tests/test_ner.py::test_section_ref[Order I Rule 8 of the Code-Order I Rule 8] PASSED                                                                [ 25%]
+tests/test_ner.py::test_section_ref[Order XXXIX Rule 1-Order XXXIX Rule 1] PASSED                                                                    [ 26%]
+tests/test_ner.py::test_section_ref[Rule 10B prescribes methods-Rule 10B] PASSED                                                                     [ 28%]
+tests/test_ner.py::test_section_ref[under Rule 114 of the Rules-Rule 114] PASSED                                                                     [ 29%]
+tests/test_ner.py::test_section_ref[Chapter VI-A deductions-Chapter VI-A] PASSED                                                                     [ 30%]
+tests/test_ner.py::test_section_ref[under Chapter X of the Act-Chapter X] PASSED                                                                     [ 31%]
+tests/test_ner.py::test_section_ref[Article 265 of the Constitution-Article 265] PASSED                                                              [ 32%]
+tests/test_ner.py::test_section_ref[Article 14 guarantees equality-Article 14] PASSED                                                                [ 33%]
+tests/test_ner.py::test_section_ref[para 4 of the Circular applies-para 4] PASSED                                                                    [ 34%]
+tests/test_ner.py::test_notification[vide S.O. 3696(E) dated-S.O. 3696(E)] PASSED                                                                    [ 35%]
+tests/test_ner.py::test_notification[notification G.S.R. 237(E) issued-G.S.R. 237(E)] PASSED                                                         [ 37%]
+tests/test_ner.py::test_notification[S.O. 999 published in gazette-S.O. 999] PASSED                                                                  [ 38%]
+tests/test_ner.py::test_notification[CBDT Circular No. 3/2024 clarifies-CBDT Circular No. 3/2024] PASSED                                             [ 39%]
+tests/test_ner.py::test_notification[as per Circular No. 13/2023-Circular No. 13/2023] PASSED                                                        [ 40%]
+tests/test_ner.py::test_notification[Circular No. 7 of 2019 applies-Circular No. 7 of 2019] PASSED                                                   [ 41%]
+tests/test_ner.py::test_notification[Instruction No. 2/2022 issued by CBDT-Instruction No. 2/2022] PASSED                                            [ 42%]
+tests/test_ner.py::test_notification[F.No. 225/12/2024-ITA-II refers-F.No. 225/12/2024-ITA-II] PASSED                                                [ 43%]
+tests/test_ner.py::test_notification[Notification No. 56/2023 dated-Notification No. 56/2023] PASSED                                                 [ 44%]
+tests/test_ner.py::test_notification[Press Release No. 402/92/2006-MC-Press Release No. 402/92/2006] PASSED                                          [ 46%]
+tests/test_ner.py::test_date[effective from 2023-04-01-2023-04-01] PASSED                                                                            [ 47%]
+tests/test_ner.py::test_date[dated 31-03-2024-31-03-2024] PASSED                                                                                     [ 48%]
+tests/test_ner.py::test_date[filed on 30/10/2022-30/10/2022] PASSED                                                                                  [ 49%]
+tests/test_ner.py::test_date[on 01.04.2023 the rate-01.04.2023] PASSED                                                                               [ 50%]
+tests/test_ner.py::test_date[the order of 31 August 2020-31 August 2020] PASSED                                                                      [ 51%]
+tests/test_ner.py::test_date[on 12th March, 2024-12th March, 2024] PASSED                                                                            [ 52%]
+tests/test_ner.py::test_date[as of March 31, 2024-March 31, 2024] PASSED                                                                             [ 53%]
+tests/test_ner.py::test_date[in April 2019 the CBDT-April 2019] PASSED                                                                               [ 55%]
+tests/test_ner.py::test_date[for FY 2023-24 the limit-FY 2023-24] PASSED                                                                             [ 56%]
+tests/test_ner.py::test_date[for A.Y. 2024-25 applies-A.Y. 2024-25] PASSED                                                                           [ 57%]
+tests/test_ner.py::test_date[w.e.f. 01-04-2023 new rates-w.e.f. 01-04-2023] PASSED                                                                   [ 58%]
+tests/test_ner.py::test_money[penalty of \u20b995,79,089 imposed-\u20b995,79,089] PASSED                                                             [ 59%]
+tests/test_ner.py::test_money[\u20b950 lakh threshold-\u20b950] PASSED                                                                               [ 60%]
+tests/test_ner.py::test_money[Rs. 1,00,000 deductible-Rs. 1,00,000] PASSED                                                                           [ 61%]
+tests/test_ner.py::test_money[Rs.500 registration fee-Rs.500] PASSED                                                                                 [ 62%]
+tests/test_ner.py::test_money[INR 12,07,935 recovered-INR 12,07,935] PASSED                                                                          [ 64%]
+tests/test_ner.py::test_money[2.5 crore rupees penalty-2.5 crore rupees] PASSED                                                                      [ 65%]
+tests/test_ner.py::test_money[50 lakh rupees deposited-50 lakh rupees] PASSED                                                                        [ 66%]
+tests/test_ner.py::test_money[USD 35,152 remitted-USD 35,152] PASSED                                                                                 [ 67%]
+tests/test_ner.py::test_money[EUR 10,000 transferred-EUR 10,000] PASSED                                                                              [ 68%]
+tests/test_ner.py::test_act_name[under the Income-tax Act, 1961 the assessee-Income-tax Act, 1961] PASSED                                            [ 69%]
+tests/test_ner.py::test_act_name[the Foreign Exchange Management Act, 1999-Foreign Exchange Management Act, 1999] PASSED                             [ 70%]
+tests/test_ner.py::test_act_name[the Companies Act, 2013 mandates-Companies Act, 2013] PASSED                                                        [ 71%]
+tests/test_ner.py::test_act_name[Insolvency and Bankruptcy Code, 2016-Insolvency and Bankruptcy Code, 2016] PASSED                                   [ 73%]
+tests/test_ner.py::test_act_name[Code of Civil Procedure, 1908-Code of Civil Procedure, 1908] PASSED                                                 [ 74%]
+tests/test_ner.py::test_act_name[Prevention of Money Laundering Act, 2002-Prevention of Money Laundering Act, 2002] PASSED                           [ 75%]
+tests/test_ner.py::test_act_name[Bharatiya Nyaya Sanhita, 2023 replaces-Bharatiya Nyaya Sanhita, 2023] PASSED                                        [ 76%]
+tests/test_ner.py::test_act_name[Bharatiya Sakshya Adhiniyam, 2023-Bharatiya Sakshya Adhiniyam, 2023] PASSED                                         [ 77%]
+tests/test_ner.py::test_act_name[the Cryptocurrency Regulation Act, 2025-Cryptocurrency Regulation Act, 2025] PASSED                                 [ 78%]
+tests/test_ner.py::test_act_name[under the Digital Personal Data Protection Act, 2023-Digital Personal Data Protection Act, 2023] PASSED             [ 79%]
+tests/test_ner.py::test_org[the Supreme Court of India held-Supreme Court of India] PASSED                                                           [ 80%]
+tests/test_ner.py::test_org[the Delhi High Court dismissed-Delhi High Court] PASSED                                                                  [ 82%]
+tests/test_ner.py::test_org[Income Tax Appellate Tribunal upheld-Income Tax Appellate Tribunal] PASSED                                               [ 83%]
+tests/test_ner.py::test_org[Central Board of Direct Taxes issued-Central Board of Direct Taxes] PASSED                                               [ 84%]
+tests/test_ner.py::test_org[the Reserve Bank of India directed-Reserve Bank of India] PASSED                                                         [ 85%]
+tests/test_ner.py::test_org[Securities and Exchange Board of India-Securities and Exchange Board of India] PASSED                                    [ 86%]
+tests/test_ner.py::test_org[National Company Law Tribunal order-National Company Law Tribunal] PASSED                                                [ 87%]
+tests/test_ner.py::test_org[the Enforcement Directorate attached-Enforcement Directorate] PASSED                                                     [ 88%]
+tests/test_ner.py::test_org[Ministry of Finance notification-Ministry of Finance] PASSED                                                             [ 89%]
+tests/test_ner.py::test_org[Comptroller and Auditor General of India-Comptroller and Auditor General of India] PASSED                                [ 91%]
+tests/test_ner.py::test_realistic_sentence[case0] PASSED                                                                                             [ 92%]
+tests/test_ner.py::test_realistic_sentence[case1] PASSED                                                                                             [ 93%]
+tests/test_ner.py::test_realistic_sentence[case2] PASSED                                                                                             [ 94%]
+tests/test_ner.py::test_realistic_sentence[case3] PASSED                                                                                             [ 95%]
+tests/test_ner.py::test_no_overlapping_spans PASSED                                                                                                  [ 96%]
+tests/test_ner.py::test_entities_within_text_bounds PASSED                                                                                           [ 97%]
+tests/test_ner.py::test_empty_text PASSED                                                                                                            [ 98%]
+tests/test_ner.py::test_plain_english_no_false_positives PASSED                                                                                      [100%]
+
+=================================================================== 89 passed in 6.56s ====================================================================
+
+C:\Users\jain2\Documents\vedika_internship_task\bharat_law_pipeline>

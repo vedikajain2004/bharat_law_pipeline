@@ -1,0 +1,29 @@
+# Web crawling & HTTP
+httpx>=0.27.0
+playwright>=1.44.0
+
+# HTML parsing & conversion
+beautifulsoup4>=4.12.0
+lxml>=5.2.0
+html2text>=2024.2.26
+
+# PDF parsing
+pymupdf>=1.24.0        # provides `import fitz`
+
+# NLP & NER
+spacy>=3.7.0
+# After pip install, run: python -m spacy download en_core_web_sm
+
+# Token counting
+tiktoken>=0.7.0
+
+# Language detection
+langdetect>=1.0.9
+
+# Robots.txt (stdlib urllib.robotparser used; no extra dep needed)
+
+# Testing
+pytest>=8.0.0
+
+# Utilities (stdlib only; no extra dep)
+# hashlib, re, json, pathlib, logging, collections, dataclasses, urllib → stdlib
